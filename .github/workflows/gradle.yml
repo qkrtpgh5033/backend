@@ -31,7 +31,7 @@ jobs:
         distribution: 'temurin'
         
     - name: test
-      run: echo "key:$TEST_KEY"
+      run: echo "key:${{ secrets.TEST_KEY }}"
     - name: Make gradlew executable
       run: chmod 744 ./gradlew
     
