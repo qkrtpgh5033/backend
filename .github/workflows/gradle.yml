@@ -28,7 +28,9 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-        
+    
+    - name: test
+      run: ehco "key:$TEST_KEY"
         
     - name: Make gradlew executable
       run: chmod 744 ./gradlew
